@@ -32,7 +32,7 @@ public:
 
 
 	UPROPERTY(EditAnywhere, Category = "My Door")
-	float OpenAngle;
+	float OpenAngle;//crea variable
 
 
 protected:
