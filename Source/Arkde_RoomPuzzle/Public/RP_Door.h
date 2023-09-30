@@ -1,5 +1,5 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-
+// .h para crear variables y funciones
 #pragma once
 
 #include "CoreMinimal.h"
