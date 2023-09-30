@@ -10,7 +10,7 @@ ARP_Door::ARP_Door()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	
+	// se crean cada uno de los componentes, esto es como agregar un componente desde area de trabajo de los blueprint
 	CustomRootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("CustomRoot"));
 	CustomRootComponent = RootComponent;
 
@@ -18,7 +18,7 @@ ARP_Door::ARP_Door()
 	DoorFrameComponent->SetupAttachment(CustomRootComponent);
 
 	DoorComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Door"));
-	DoorFrameComponent->SetupAttachment(CustomRootComponent);
+	DoorComponent->SetupAttachment(CustomRootComponent);
 
 
 
