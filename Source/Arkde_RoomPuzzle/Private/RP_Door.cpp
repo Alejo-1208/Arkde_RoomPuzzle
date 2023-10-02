@@ -44,6 +44,6 @@ void ARP_Door::Tick(float DeltaTime)
 void ARP_Door::OpenDoor()
 {
 	FRotator NewRotation = FRotator(0.0f, OpenAngle, 0.0f);
-	DoorComponent->SetRelativeRotation(NewRotation);
+	DoorComponent->SetRelativeRotation(NewRotation); //se apunta a la rotación
 }
 
