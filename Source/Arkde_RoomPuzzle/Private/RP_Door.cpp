@@ -12,7 +12,7 @@ ARP_Door::ARP_Door()
 
 	// se crean cada uno de los componentes, esto es como agregar un componente desde area de trabajo de los blueprint
 	CustomRootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("CustomRoot"));
-	CustomRootComponent = RootComponent;
+	RootComponent = CustomRootComponent;
 
 	DoorFrameComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("DoorFrame"));
 	DoorFrameComponent->SetupAttachment(CustomRootComponent);
